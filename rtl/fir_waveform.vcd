@@ -1,0 +1,288 @@
+$date
+	Fri Oct 30 13:42:56 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_fir_filter $end
+$var wire 1 ! in_ready $end
+$var wire 1 " out_valid $end
+$var wire 16 # out_data [15:0] $end
+$var reg 1 $ clk $end
+$var reg 2 % coeff_addr [1:0] $end
+$var reg 16 & coeff_data [15:0] $end
+$var reg 1 ' coeff_we $end
+$var reg 16 ( in_data [15:0] $end
+$var reg 1 ) in_valid $end
+$var reg 1 * rst_n $end
+$var integer 32 + errors [31:0] $end
+$var integer 32 , sample_count [31:0] $end
+$scope module dut $end
+$var wire 1 $ clk $end
+$var wire 2 - coeff_addr [1:0] $end
+$var wire 16 . coeff_data [15:0] $end
+$var wire 1 ' coeff_we $end
+$var wire 16 / in_data [15:0] $end
+$var wire 1 ! in_ready $end
+$var wire 1 ) in_valid $end
+$var wire 1 * rst_n $end
+$var reg 40 0 acc_next [39:0] $end
+$var reg 16 1 out_data [15:0] $end
+$var reg 1 " out_valid $end
+$var reg 32 2 product [31:0] $end
+$var reg 16 3 tap_sample [15:0] $end
+$var integer 32 4 i [31:0] $end
+$var integer 32 5 j [31:0] $end
+$upscope $end
+$scope task load_coefficient $end
+$var reg 2 6 address [1:0] $end
+$var reg 16 7 value [15:0] $end
+$upscope $end
+$scope task send_sample $end
+$var reg 16 8 reference [15:0] $end
+$var reg 16 9 sample [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 9
+bx 8
+bx 7
+bx 6
+b100 5
+b100 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+0*
+0)
+b0 (
+0'
+b0 &
+b0 %
+0$
+b0 #
+0"
+1!
+$end
+#5000
+b100 5
+1$
+#10000
+0$
+#15000
+b100 5
+1$
+#20000
+0$
+#25000
+b100 5
+1$
+#30000
+b10101010010 7
+b0 6
+1*
+0$
+#35000
+1$
+#40000
+b10101010010 &
+b10101010010 .
+1'
+0$
+#45000
+b100 4
+1$
+#50000
+b11101010101110 7
+b1 6
+0'
+0$
+#55000
+1$
+#60000
+b11101010101110 &
+b11101010101110 .
+b1 %
+b1 -
+1'
+0$
+#65000
+b100 4
+1$
+#70000
+b10 6
+0'
+0$
+#75000
+1$
+#80000
+b10 %
+b10 -
+1'
+0$
+#85000
+b100 4
+1$
+#90000
+b10101010010 7
+b11 6
+0'
+0$
+#95000
+1$
+#100000
+b10101010010 &
+b10101010010 .
+b11 %
+b11 -
+1'
+0$
+#105000
+b100 4
+1$
+#110000
+b1010101001 8
+b100000000000000 9
+0'
+0$
+#115000
+1$
+#120000
+b1010101001000000000000000 0
+b0 2
+b0 3
+b100 4
+1)
+b100000000000000 (
+b100000000000000 /
+0$
+#125000
+b0 2
+b0 3
+b100 4
+b10000000000000000000000000000 0
+1"
+b1010101001 #
+b1010101001 1
+b0 5
+1$
+#126000
+b1 ,
+#130000
+b1110101010111 8
+b0 9
+0)
+0$
+#135000
+0"
+1$
+#140000
+b0 2
+b0 3
+b100 4
+b1110101010111000000000000000 0
+1)
+b0 (
+b0 /
+0$
+#145000
+b0 2
+b0 3
+b100 4
+b1110101010111000000000000000 0
+1"
+b1110101010111 #
+b1110101010111 1
+b0 5
+1$
+#146000
+b10 ,
+#150000
+0)
+0$
+#155000
+0"
+1$
+#160000
+1)
+0$
+#165000
+b1010101001000000000000000 2
+b100000000000000 3
+b100 4
+b1010101001000000000000000 0
+1"
+b0 5
+1$
+#166000
+b11 ,
+#170000
+b1010101001 8
+0)
+0$
+#175000
+0"
+1$
+#180000
+1)
+0$
+#185000
+b100 4
+b0 2
+b0 3
+b0 0
+1"
+b1010101001 #
+b1010101001 1
+b0 5
+1$
+#186000
+b100 ,
+#190000
+b0 8
+0)
+0$
+#195000
+0"
+1$
+#200000
+1)
+0$
+#205000
+b100 4
+1"
+b0 #
+b0 1
+b0 5
+1$
+#206000
+b101 ,
+#210000
+0)
+0$
+#215000
+0"
+1$
+#220000
+1)
+0$
+#225000
+1"
+b0 5
+1$
+#226000
+b110 ,
+#230000
+0)
+0$
